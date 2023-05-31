@@ -10,8 +10,12 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 COPY app.py .
-# COPY foldername1 foldername1
-# COPY foldername2 foldername2
+COPY credential credential
+COPY database database
+COPY function function
+COPY utility utility
+# COPY foldername_a foldername_a
+# COPY foldername_b foldername_b
 
 EXPOSE 8080
 
